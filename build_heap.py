@@ -4,7 +4,7 @@ def build_heap(data):
     swaps = []
     loopCount = len(data) -1 
     parentElements = 0
-    for i in range len(loopCount):
+    while loopCount != 0:
         lastElement = loopCount
         if lastElement != 0:
             parentElements = int((lastElement-1)/2)                
