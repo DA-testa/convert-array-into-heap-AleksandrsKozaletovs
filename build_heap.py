@@ -10,7 +10,7 @@ def build_heap(data):
     
     while loopCount != 0:
         lastElement = loopCount
-        if lastElement != 0:
+        while lastElement != 0:
             parentElements = int((lastElement-1)/2)                
             if data[lastElement] < data[parentElements]: 
                 data[lastElement],data[parentElements] = data[parentElements],data[lastElement]
