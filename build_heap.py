@@ -14,7 +14,7 @@ def build_heap(data):
             parentElements = int((lastElement-1)/2)                
             if data[lastElement] < data[parentElements]: 
                 data[lastElement],data[parentElements] = data[parentElements],data[lastElement]
-                swaps.insert([parentElements,lastElement])
+                swaps.append([parentElements,lastElement])
             lastElement = parentElements
 
         loopCount -= 1
@@ -35,7 +35,7 @@ def main():
 
     elif "f" in actionChoose.lower():
         openFilename = input()
-        if "a" in openFilename.lower:
+        if "a" in openFilename.lower():
             return
         else:
             with open("./test/"+openFilename, mode = "r") as f:
