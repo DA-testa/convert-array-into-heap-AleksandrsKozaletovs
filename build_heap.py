@@ -38,7 +38,7 @@ def main():
         if "a" in openFilename.lower():
             return
         else:
-            with open("./test/"+openFilename, mode = "r") as f:
+            with open("./tests/" + openFilename, mode = "r") as f:
                 # input from keyboard
                 n = int(f.readline())
                 data = list(map(int, f.readline().split()))
