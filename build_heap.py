@@ -40,8 +40,8 @@ def main():
         else:
             with open("./test/"+openFilename, mode = "r") as f:
                 # input from keyboard
-            n = int(f.readline())
-            data = list(map(int, f.readline().split()))
+                n = int(f.readline())
+                data = list(map(int, f.readline().split()))
 
             # calls function to assess the data 
             # and give back all swaps
