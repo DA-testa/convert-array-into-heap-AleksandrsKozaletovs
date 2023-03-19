@@ -4,15 +4,18 @@ def build_heap(data):
     swaps = []
     loopCount = len(data) -1 
     parentElements = 0
+    
+    # TODO: Creat heap and heap sort
+    # try to achieve  O(n) and not O(n2)
+    
     while loopCount != 0:
         lastElement = loopCount
         if lastElement != 0:
             parentElements = int((lastElement-1)/2)                
-            if data[last] < data[parentElements] : 
-            data[last],data[parentElements] = data[parentElements],data[last]
-            swaps.insert([parentElements,last])
-    # TODO: Creat heap and heap sort
-    # try to achieve  O(n) and not O(n2)
+            if data[last] < data[parentElements]: 
+                data[last],data[parentElements] = data[parentElements],data[last]
+                swaps.insert([parentElements,last])
+            lastElement = parentElements
 
         loopCount -= 1
     return swaps
