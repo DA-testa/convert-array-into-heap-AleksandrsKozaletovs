@@ -14,7 +14,7 @@ def build_heap(data):
             parentElements = int((lastElement-1)/2)                
             if data[lastElement] < data[parentElements]: 
                 data[lastElement],data[parentElements] = data[parentElements],data[lastElement]
-                swaps.insert([parentElements,lastElements])
+                swaps.insert([parentElements,lastElement])
             lastElement = parentElements
 
         loopCount -= 1
